@@ -1,0 +1,146 @@
+{
+  "site": {
+    "title": "luoqi2112 · Start Page",
+    "subtitle": "我的站点正在搭建中。",
+    "homeUrl": "https://luoqi2112.tech",
+    "githubUrl": "https://github.com/luoqi2112",
+    "language": "zh-CN"
+  },
+  "wallpapers": {
+    "intervalSeconds": 30,
+    "fadeMs": 900,
+    "rememberLast": true,
+    "preloadNext": true,
+    "items": [
+      { "type": "image", "src": "assets/wallpapers/wall1.jpg", "credit": "static 1" },
+      { "type": "video", "src": "assets/wallpapers/wall2.mp4", "credit": "dynamic 1" },
+      { "type": "image", "src": "assets/wallpapers/wall3.jpg", "credit": "static 2" }
+    ]
+  },
+  "search": {
+    "defaultEngineId": "google",
+    "engines": [
+      {
+        "id": "google",
+        "name": "Google",
+        "queryUrl": "https://www.google.com/search?q={q}"
+      },
+      {
+        "id": "bing",
+        "name": "Bing",
+        "queryUrl": "https://www.bing.com/search?q={q}"
+      },
+      {
+        "id": "duckduckgo",
+        "name": "DuckDuckGo",
+        "queryUrl": "https://duckduckgo.com/?q={q}"
+      }
+    ]
+  },
+  "profiles": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com/luoqi2112",
+      "icon": "🐙",
+      "note": "代码与项目"
+    },
+    {
+      "id": "email",
+      "name": "Email",
+      "url": "mailto:your@email.com",
+      "icon": "✉️",
+      "note": "联系我（把邮箱换成你的）"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "url": "https://www.notion.so/",
+      "icon": "📝",
+      "note": "笔记与知识库"
+    },
+    {
+      "id": "bilibili",
+      "name": "B站",
+      "url": "https://www.bilibili.com/",
+      "icon": "📺",
+      "note": "内容平台（换成你的主页链接）"
+    },
+    {
+      "id": "zhihu",
+      "name": "知乎",
+      "url": "https://www.zhihu.com/",
+      "icon": "💡",
+      "note": "内容平台（换成你的主页链接）"
+    }
+  ],
+  "collections": [
+    {
+      "id": "learning",
+      "title": "学习",
+      "icon": "📚",
+      "items": [
+        { "name": "Coursera", "url": "https://www.coursera.org", "tags": ["课程"] },
+        { "name": "Khan Academy", "url": "https://www.khanacademy.org", "tags": ["基础"] },
+        { "name": "MIT OpenCourseWare", "url": "https://ocw.mit.edu", "tags": ["公开课"] }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "工具",
+      "icon": "🧰",
+      "items": [
+        { "name": "Google Drive", "url": "https://drive.google.com", "tags": ["云盘"] },
+        { "name": "Figma", "url": "https://www.figma.com", "tags": ["协作"] },
+        { "name": "Canva", "url": "https://www.canva.com", "tags": ["设计"] }
+      ]
+    },
+    {
+      "id": "dev",
+      "title": "开发",
+      "icon": "🧑‍💻",
+      "items": [
+        { "name": "MDN", "url": "https://developer.mozilla.org", "tags": ["前端"] },
+        { "name": "GitHub", "url": "https://github.com", "tags": ["代码"] },
+        { "name": "Stack Overflow", "url": "https://stackoverflow.com", "tags": ["问答"] }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "设计",
+      "icon": "🎨",
+      "items": [
+        { "name": "Dribbble", "url": "https://dribbble.com", "tags": ["灵感"] },
+        { "name": "Behance", "url": "https://www.behance.net", "tags": ["作品集"] },
+        { "name": "Awwwards", "url": "https://www.awwwards.com", "tags": ["网页"] }
+      ]
+    },
+    {
+      "id": "fun",
+      "title": "娱乐",
+      "icon": "🎮",
+      "items": [
+        { "name": "YouTube", "url": "https://www.youtube.com", "tags": ["视频"] },
+        { "name": "Bilibili", "url": "https://www.bilibili.com", "tags": ["视频"] },
+        { "name": "Steam", "url": "https://store.steampowered.com", "tags": ["游戏"] }
+      ]
+    },
+    {
+      "id": "news",
+      "title": "资讯",
+      "icon": "🗞️",
+      "items": [
+        { "name": "Hacker News", "url": "https://news.ycombinator.com", "tags": ["科技"] },
+        { "name": "36氪", "url": "https://36kr.com", "tags": ["创业"] },
+        { "name": "少数派", "url": "https://sspai.com", "tags": ["产品"] }
+      ]
+    }
+  ],
+  "extras": {
+    "showClock": true,
+    "showTodo": true,
+    "todoMaxItems": 12,
+    "showRecent": true,
+    "recentMaxItems": 8
+  }
+}

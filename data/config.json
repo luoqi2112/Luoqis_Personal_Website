@@ -1,0 +1,284 @@
+{
+  "site": {
+    "title": "珞祈 · Start Page",
+    "subtitle": "我的站点正在搭建中。",
+    "homeUrl": "https://luoqi2112.tech",
+    "githubUrl": "https://github.com/luoqi2112",
+    "language": "zh-CN"
+  },
+  "profile": {
+    "name": "珞祈",
+    "handle": "@luoqi2112",
+    "bio": "我的站点正在搭建中。",
+    "hobbies": ["摄影", "C++", "动漫", "游戏"],
+
+    "avatarSrc": "assets/touxiang.jpg"
+  },
+  "wallpapers": {
+    "intervalSeconds": 30,
+    "fadeMs": 900,
+    "rememberLast": true,
+    "preloadNext": true,
+    "items": [
+      { "type": "image", "src": "assets/wallpapers/01.png", "credit": "static 01" },
+      { "type": "image", "src": "assets/wallpapers/02.png", "credit": "static 02" },
+      { "type": "image", "src": "assets/wallpapers/03.png", "credit": "static 03" },
+      { "type": "video", "src": "assets/wallpapers/videos/11.mp4", "poster": "assets/wallpapers/posters/11.jpg", "credit": "video 11" },
+      { "type": "video", "src": "assets/wallpapers/videos/12.mp4", "poster": "assets/wallpapers/posters/12.jpg", "credit": "video 12" },
+      { "type": "video", "src": "assets/wallpapers/videos/13.mp4", "poster": "assets/wallpapers/posters/13.jpg", "credit": "video 13" },
+      { "type": "video", "src": "assets/wallpapers/videos/14.mp4", "poster": "assets/wallpapers/posters/14.jpg", "credit": "video 14" }
+    ]
+  },
+  "search": {
+    "defaultEngineId": "google",
+    "engines": [
+      {
+        "id": "google",
+        "name": "Google",
+        "queryUrl": "https://www.google.com/search?q={q}"
+      },
+      {
+        "id": "bing",
+        "name": "Bing",
+        "queryUrl": "https://www.bing.com/search?q={q}"
+      },
+      {
+        "id": "duckduckgo",
+        "name": "DuckDuckGo",
+        "queryUrl": "https://duckduckgo.com/?q={q}"
+      }
+    ]
+  },
+  "profiles": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com/luoqi2112",
+      "icon": "🐙",
+      "note": "代码与项目",
+      "isTop": true,
+      "topRank": 1
+    },
+    {
+      "id": "email",
+      "name": "Email",
+      "url": "mailto:m13521126021@gmail.com",
+      "icon": "✉️",
+      "note": "联系我",
+      "isTop": true,
+      "topRank": 2
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "url": "https://www.notion.so/",
+      "icon": "📝",
+      "note": "笔记与知识库",
+      "isTop": true,
+      "topRank": 5
+    },
+    {
+      "id": "bilibili",
+      "name": "B站",
+      "url": "https://space.bilibili.com/397828506",
+      "icon": "📺",
+      "note": "内容平台",
+      "isTop": true,
+      "topRank": 3
+    },
+    {
+      "id": "qq",
+      "name": "QQ",
+      "url": "https://user.qzone.qq.com/3266509369",
+      "icon": "🐧",
+      "note": "老年人才用QQ",
+      "isTop": false,
+      "topRank": 4
+    },
+    {
+      "id": "wechat",
+      "name": "微信",
+      "url": "assets/wechat-qr.png",
+      "icon": "",
+      "note": "扫码添加好友",
+      "isTop": false,
+      "topRank": 6
+    }
+  ],
+  "bookmarks": {
+    "top": [
+      { "name": "GitHub", "url": "https://github.com", "icon": "🐙", "tags": ["代码"], "pinned": true },
+      { "name": "ChatGPT", "url": "https://chatgpt.com/", "icon": "🤖", "tags": ["AI"], "pinned": true },
+      { "name": "DeepSeek", "url": "https://chat.deepseek.com/", "icon": "🔍", "tags": ["AI"], "pinned": true },
+      { "name": "洛谷", "url": "https://www.luogu.com.cn/", "icon": "💻", "tags": ["编程"], "pinned": true },
+      { "name": "Bilibili", "url": "https://www.bilibili.com", "icon": "📺", "tags": ["视频"], "pinned": false },
+      { "name": "YouTube", "url": "https://youtube.com/", "icon": "▶️", "tags": ["视频"], "pinned": false }
+    ],
+    "categories": [
+      {
+        "id": "ai",
+        "title": "AI/聊天",
+        "icon": "🤖",
+        "items": [
+          { "name": "ChatGPT", "url": "https://chatgpt.com/", "tags": ["AI"] },
+          { "name": "DeepSeek", "url": "https://chat.deepseek.com/", "tags": ["AI"] },
+          { "name": "Claude", "url": "https://claude.ai/new", "tags": ["AI"] },
+          { "name": "Gemini", "url": "https://gemini.google.com/app", "tags": ["AI"] },
+          { "name": "Grok", "url": "https://grok.com/", "tags": ["AI"] },
+          { "name": "Kimi", "url": "https://www.kimi.com/", "tags": ["AI"] },
+          { "name": "通义千问", "url": "https://www.qianwen.com/chat", "tags": ["AI"] },
+          { "name": "NotebookLM", "url": "https://notebooklm.google.com/", "tags": ["AI"] },
+          { "name": "Google AI Studio", "url": "https://aistudio.google.com/", "tags": ["AI"] }
+        ]
+      },
+      {
+        "id": "learning",
+        "title": "学习/教育",
+        "icon": "📚",
+        "items": [
+          { "name": "Moodle", "url": "https://moodle.federation.edu.au/login/index.php", "tags": ["学校"] },
+          { "name": "Federation University", "url": "https://www.federation.edu.au/", "tags": ["学校"] },
+          { "name": "Google 学术", "url": "https://scholar.google.com/", "tags": ["学术"] },
+          { "name": "学科网", "url": "https://www.zxxk.com/", "tags": ["教育"] },
+          { "name": "W3School", "url": "https://www.w3school.com.cn/", "tags": ["教程"] },
+          { "name": "HTML教学工具", "url": "https://www.midorg.com/h.html", "tags": ["教程"] }
+        ]
+      },
+      {
+        "id": "dev",
+        "title": "编程/开发",
+        "icon": "🧑‍💻",
+        "items": [
+          { "name": "GitHub", "url": "https://github.com/", "tags": ["代码"] },
+          { "name": "Gitee", "url": "https://gitee.com/", "tags": ["代码"] },
+          { "name": "洛谷", "url": "https://www.luogu.com.cn/", "tags": ["算法"] },
+          { "name": "OI Wiki", "url": "https://oi-wiki.org/", "tags": ["算法"] },
+          { "name": "HelloGitHub", "url": "https://hellogithub.com/", "tags": ["开源"] },
+          { "name": "Tampermonkey", "url": "https://www.tampermonkey.net/", "tags": ["脚本"] }
+        ]
+      },
+      {
+        "id": "tools",
+        "title": "工具/效率",
+        "icon": "🧰",
+        "items": [
+          { "name": "Google 翻译", "url": "https://translate.google.com/", "tags": ["翻译"] },
+          { "name": "论文翻译降重", "url": "https://freysu.github.io/MyTranslator", "tags": ["翻译"] },
+          { "name": "矩阵计算器", "url": "https://matrixcalc.org/zh-CN", "tags": ["数学"] },
+          { "name": "提示词优化器", "url": "https://prompt.always200.com/", "tags": ["AI"] },
+          { "name": "Type Words", "url": "https://typewords.cc/words", "tags": ["单词"] },
+          { "name": "OCS网课助手", "url": "https://docs.ocsjs.com/docs/script-helper", "tags": ["网课"] },
+          { "name": "MinerU文档解析", "url": "https://mineru.net/OpenSourceTools/Extractor", "tags": ["文档"] },
+          { "name": "SPSSPRO", "url": "https://www.spsspro.com/", "tags": ["数据"] },
+          { "name": "Citation Hero", "url": "https://www.citationhero.io/app", "tags": ["引用"] },
+          { "name": "AI检测器", "url": "https://quillbot.com/ai-content-detector", "tags": ["检测"] }
+        ]
+      },
+      {
+        "id": "cloud",
+        "title": "云服务",
+        "icon": "☁️",
+        "items": [
+          { "name": "腾讯云域名", "url": "https://console.cloud.tencent.com/domain", "tags": ["域名"] },
+          { "name": "Gmail", "url": "https://accounts.google.com/b/0/AddMailService", "tags": ["邮箱"] },
+          { "name": "Google 地图", "url": "https://maps.google.com/", "tags": ["地图"] },
+          { "name": "Microsoft Teams", "url": "https://teams.microsoft.com/v2", "tags": ["协作"] }
+        ]
+      },
+      {
+        "id": "media",
+        "title": "社交/媒体",
+        "icon": "📱",
+        "items": [
+          { "name": "YouTube", "url": "https://youtube.com/", "tags": ["视频"] },
+          { "name": "Bilibili", "url": "https://www.bilibili.com", "tags": ["视频"] },
+          { "name": "Twitter/X", "url": "https://twitter.com/", "tags": ["社交"] }
+        ]
+      },
+      {
+        "id": "resources",
+        "title": "资源/下载",
+        "icon": "📦",
+        "items": [
+          { "name": "资源网导航", "url": "https://dh.labr.cc/", "tags": ["导航"] },
+          { "name": "下次一定", "url": "https://www.iiice.cn/", "tags": ["资源"] },
+          { "name": "子墨软件", "url": "https://zzyrj.top/", "tags": ["软件"] }
+        ]
+      },
+      {
+        "id": "anime",
+        "title": "动漫",
+        "icon": "🎬",
+        "items": [
+          { "name": "AGE动漫", "url": "https://www.agedm.org/", "tags": ["动漫"] },
+          { "name": "AnFuns动漫", "url": "https://www.anfuns.cc/", "tags": ["动漫"] }
+        ]
+      },
+      {
+        "id": "game",
+        "title": "游戏",
+        "icon": "🎮",
+        "items": [
+          { "name": "Minecraft官网", "url": "https://www.minecraft.net/zh-hans", "tags": ["游戏"] },
+          { "name": "MCBBS论坛", "url": "https://www.mcbbs.net/portal.php", "tags": ["游戏"] }
+        ]
+      },
+      {
+        "id": "other",
+        "title": "其他",
+        "icon": "📌",
+        "items": [
+          { "name": "家里WiFi", "url": "http://192.168.1.1/", "tags": ["路由器"] },
+          { "name": "Lenovo Support", "url": "https://support.lenovo.com/", "tags": ["支持"] },
+          { "name": "摄影学习资料", "url": "https://docs.qq.com/doc/DT0V1SHJOWUhoWGhz", "tags": ["摄影"] },
+          { "name": "MCM数学建模", "url": "https://www.contest.comap.com/undergraduate/contests/mcm/login.php", "tags": ["竞赛"] }
+        ]
+      }
+    ]
+  },
+  "todos": {
+    "settings": {
+      "showTopN": 5
+    }
+  },
+  "photos": {
+    "featured": [
+      { "src": "assets/photos/DSC_3659.jpg", "caption": "DSC_3659", "tags": ["摄影"] },
+      { "src": "assets/photos/DJI_20250726204525_0091_D-1.jpg", "caption": "航拍", "tags": ["无人机"] },
+      { "src": "assets/photos/DSC_3809-1.jpg", "caption": "DSC_3809", "tags": ["摄影"] }
+    ],
+    "albums": [
+      {
+        "title": "2025 · 航拍",
+        "year": 2025,
+        "items": [
+          { "src": "assets/photos/DJI_20250712140834_0012_D-1.jpg", "caption": "塔公草原", "tags": ["无人机"] },
+          { "src": "assets/photos/DJI_20250714165624_0020_D-1.jpg", "caption": "姊妹湖", "tags": ["无人机"] },
+          { "src": "assets/photos/DJI_20250714170358_0032_D-1.jpg", "caption": "姊妹湖", "tags": ["无人机"] },
+          { "src": "assets/photos/DJI_20250726204525_0091_D-1.jpg", "caption": "色达", "tags": ["无人机"] }
+        ]
+      },
+      {
+        "title": "2025 · 相机",
+        "year": 2025,
+        "items": [
+          { "src": "assets/photos/DSC_3659.jpg", "caption": "布达拉宫", "tags": ["摄影"] },
+          { "src": "assets/photos/DSC_3682.jpg", "caption": "布达拉宫夜景", "tags": ["摄影"] },
+          { "src": "assets/photos/DSC_3733.jpg", "caption": "纳木错", "tags": ["摄影"] },
+          { "src": "assets/photos/DSC_3740.jpg", "caption": "纳木错", "tags": ["摄影"] },
+          { "src": "assets/photos/DSC_3741.jpg", "caption": "纳木错", "tags": ["摄影"] },
+          { "src": "assets/photos/DSC_3809-1.jpg", "caption": "冰川", "tags": ["摄影"] },
+          { "src": "assets/photos/DSC_3855-1.jpg", "caption": "色达", "tags": ["摄影"] },
+          { "src": "assets/photos/DSC_3901-1.jpg", "caption": "汶川", "tags": ["摄影"] }
+        ]
+      }
+    ]
+  },
+  "extras": {
+    "showClock": true,
+    "showTodo": true,
+    "todoMaxItems": 12,
+    "showRecent": true,
+    "recentMaxItems": 8
+  }
+}

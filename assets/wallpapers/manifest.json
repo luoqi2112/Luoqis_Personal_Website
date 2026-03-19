@@ -1,0 +1,25 @@
+{
+  "images": [
+    "assets/wallpapers/01.png",
+    "assets/wallpapers/02.png",
+    "assets/wallpapers/03.png"
+  ],
+  "videos": [
+    {
+      "src": "assets/wallpapers/videos/11.mp4",
+      "poster": "assets/wallpapers/posters/11.jpg"
+    },
+    {
+      "src": "assets/wallpapers/videos/12.mp4",
+      "poster": "assets/wallpapers/posters/12.jpg"
+    },
+    {
+      "src": "assets/wallpapers/videos/13.mp4",
+      "poster": "assets/wallpapers/posters/13.jpg"
+    },
+    {
+      "src": "assets/wallpapers/videos/14.mp4",
+      "poster": "assets/wallpapers/posters/14.jpg"
+    }
+  ]
+}

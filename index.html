@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Start Page</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- background layers (for crossfade) -->
+  <div class="bg" aria-hidden="true">
+    <div id="bgA" class="bg__layer"></div>
+    <div id="bgB" class="bg__layer"></div>
+    <video id="wallpaperVideo" class="bg__video" muted loop playsinline preload="metadata"></video>
+    <div class="bg__overlay"></div>
+  </div>
+
+  <a class="skip" href="#main">跳到主要内容</a>
+
+  <main id="main" class="page-shell" aria-label="Start Page 一级面板">
+    <div class="shell" aria-label="Start Page 卡片容器">
+    <section class="card profile" aria-label="个人信息卡">
+      <div class="profile__top">
+        <div class="avatarWrap" aria-label="头像">
+          <img id="avatar" class="avatar" alt="头像" loading="lazy" />
+          <div id="avatarIcon" class="avatarIcon" aria-hidden="true" hidden>👤</div>
+        </div>
+        <div class="profile__meta">
+          <div class="profile__name" id="profileName">luoqi2112</div>
+          <div class="profile__handle" id="profileHandle">@luoqi2112</div>
+          <div class="profile__bio" id="profileBio"></div>
+        </div>
+      </div>
+      <div id="profileHobbies" class="hobbies" aria-label="爱好标签"></div>
+
+      <div class="mini" aria-label="壁纸轮换控件">
+        <div class="mini__row">
+          <div class="mini__title">Wallpaper</div>
+          <div class="mini__sub" id="wallpaperMeta"></div>
+        </div>
+        <div class="mini__actions">
+          <button id="wpPrev" class="btn btn--sm" type="button" aria-label="上一张壁纸">◀</button>
+          <button id="wpToggle" class="btn btn--sm" type="button" aria-label="暂停或播放壁纸轮播">⏸</button>
+          <button id="wpNext" class="btn btn--sm" type="button" aria-label="下一张壁纸">▶</button>
+        </div>
+      </div>
+
+      <div class="links">
+        <a id="homeLink" class="chip" href="#" target="_blank" rel="noopener noreferrer" aria-label="打开主页">主页</a>
+        <a id="githubLink" class="chip" href="#" target="_blank" rel="noopener noreferrer" aria-label="打开 GitHub">GitHub</a>
+      </div>
+    </section>
+
+    <section class="card searchCard" aria-label="搜索栏">
+      <div class="card__hd">
+        <div class="card__title">Search</div>
+        <div class="card__sub" id="clock"></div>
+      </div>
+      <div class="search" role="search">
+        <label class="sr-only" for="searchInput">搜索内容</label>
+        <input id="searchInput" class="search__input" type="search" placeholder="输入关键词，Enter 搜索" autocomplete="off" aria-label="搜索输入框" />
+        <label class="sr-only" for="engineSelect">搜索引擎</label>
+        <select id="engineSelect" class="search__select" aria-label="选择搜索引擎"></select>
+        <button id="searchBtn" class="btn" type="button" aria-label="执行搜索">搜索</button>
+      </div>
+      <div class="hint">快捷键：<kbd>/</kbd> 或 <kbd>Ctrl</kbd>+<kbd>K</kbd> 聚焦；<kbd>Esc</kbd> 清空并失焦</div>
+    </section>
+
+    <section class="card" aria-label="账号板块">
+      <div class="card__hd">
+        <div class="card__title">Accounts</div>
+        <button id="openAccounts" class="btn btn--ghost btn--sm" type="button" aria-label="更多账号">更多账号</button>
+      </div>
+      <div id="accountsTop" class="grid grid--accounts" aria-label="常用账号"></div>
+    </section>
+
+    <section class="card" aria-label="收藏板块">
+      <div class="card__hd">
+        <div class="card__title">Bookmarks</div>
+        <button id="openBookmarks" class="btn btn--ghost btn--sm" type="button" aria-label="全部收藏与分类">全部收藏 / 分类</button>
+      </div>
+      <div id="bookmarksTop" class="grid grid--bookmarks" aria-label="常用收藏"></div>
+    </section>
+
+    <section class="card" aria-label="TODO 板块">
+      <div class="card__hd">
+        <div class="card__title">Todo</div>
+        <button id="openTodos" class="btn btn--ghost btn--sm" type="button" aria-label="查看全部待办">查看全部</button>
+      </div>
+      <div class="todoQuick">
+        <label class="sr-only" for="todoInput">新增待办</label>
+        <input id="todoInput" class="search__input" type="text" placeholder="写点要做的事… 回车添加" aria-label="新增待办" />
+      </div>
+      <div id="todoTop" class="list" aria-label="最新未完成 Todo"></div>
+    </section>
+
+    <section class="card" aria-label="摄影板块">
+      <div class="card__hd">
+        <div class="card__title">Photography</div>
+        <button id="openPhotos" class="btn btn--ghost btn--sm" type="button" aria-label="查看全部摄影作品">更多 / 查看全部</button>
+      </div>
+      <div id="photosFeatured" class="grid grid--photos" aria-label="精选摄影"></div>
+    </section>
+
+    <section id="errorPanel" class="card card--error" aria-label="错误提示" hidden>
+      <div class="card__hd">
+        <div class="card__title">加载失败</div>
+        <div class="card__sub">请检查网络或配置文件路径</div>
+      </div>
+      <pre id="errorText" class="error"></pre>
+    </section>
+    </div>
+  </main>
+
+  <!-- unified drawer for secondary (scrollable) views -->
+  <div id="drawerOverlay" class="drawerOverlay" hidden></div>
+  <aside id="drawer" class="drawer" aria-label="二级菜单" aria-hidden="true" hidden>
+    <div class="drawer__hd">
+      <div id="drawerTitle" class="drawer__title">Menu</div>
+      <button id="drawerClose" class="btn btn--sm" type="button" aria-label="关闭">✕</button>
+    </div>
+    <div id="drawerBody" class="drawer__body"></div>
+  </aside>
+
+  <footer class="footer">
+    <span class="muted">© <span id="year"></span> · <a id="footerHome" href="#" target="_blank" rel="noopener noreferrer"></a></span>
+  </footer>
+
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
