@@ -23,7 +23,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
-          source: "."
+          source: "index.html,styles.css"
           target: "/opt/1panel/www/sites/luoqi2112.com/index"
           strip_components: 0
           overwrite: true
