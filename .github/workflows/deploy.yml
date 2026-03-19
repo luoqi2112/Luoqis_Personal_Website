@@ -12,19 +12,15 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      # --- 新增的“大扫除”步骤 ---
-      - name: 移除不需要的巨型文件 (防止传输卡死)
-        run: rm -rf .git .github
-
-      - name: 通过 SSH 部署文件
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          port: 22
-          source: "index.html,styles.css"
-          target: "/opt/1panel/www/sites/luoqi2112.com/index"
-          strip_components: 0
-          overwrite: true
-          timeout: 120s
+      - name: 智能增量部署 (Rsync)
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_IP }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          TARGET: "/opt/1panel/www/sites/luoqi2112.com/index"
+          SOURCE: "./"
+          # 关键配置 1：打死也不传的垃圾文件
+          EXCLUDE: ".git/, .github/"
+          # 关键配置 2：开启压缩、递归并删除服务器上多余的文件
+          ARGS: "-avzr --delete"
