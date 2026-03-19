@@ -22,3 +22,4 @@ jobs:
           target: "/opt/1panel/www/sites/luoqi2112.com/index" # 1Panel 网站存放路径
           strip_components: 0
           timeout: 120s # 增加 2 分钟超时，防止死等
+          debug: true
